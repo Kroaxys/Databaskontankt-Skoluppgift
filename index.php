@@ -1,11 +1,29 @@
 <?php include 'code.php' ?> 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Användargränsnittet till code.php, inget CSS</title>
+</head>
+<body>
+  <table>
+    <form action="" method="post">
+      <tr><td>Name: </td><td><input type="text" name="pu_name"></td></tr>
+      <tr><td>Password: </td><td><input type="password" name="pu_password"></td></tr>
+      <tr><td>E-mail: </td><td><input type="email" name="pu_email"></td></tr>
+      <tr><td>Presentation: </td><td><input type="text" name="pu_text"></td></tr>
+      <tr><td><input type="submit" name="send" value="Register"></td></tr>
+    </form>
+  </table>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Website for mortals</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -20,7 +38,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+  background-image: url(" https://www.w3schools.com/w3images/mac.jpg");
   min-height: 100%;
 }
 
@@ -320,13 +338,14 @@ body, html {
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+    <!-- action="/action_page.php" target="_blank" -->
+    <form action="" method="post">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="form_name"></p>
+      <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="form_email"></p>
+      <p><input class="w3-input w3-border" type="password" placeholder="Password" required name="form_password"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Text" required name="form_text"></p>
       <p>
-        <button class="w3-button w3-black" type="submit">
+        <button class="w3-button w3-black" type="submit" value="Register" name="send">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
