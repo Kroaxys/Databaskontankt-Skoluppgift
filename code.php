@@ -16,11 +16,24 @@ function logIn($form_email, $form_password){
   $_SESSION["password"] = $form_password;
 }
 
-function startup(){
-  if(isset($_SESSION["email"]) && isset($_SESSION["password"]))
-    {
-      
-    }
+function startup()
+{
+  if (isset($_SESSION["email"]) && isset($_SESSION["password"])) {
+    $servername = 'localhost';
+    $username = 'soria';
+    $password = '123';
+    $databasename = 'introduction';
+    $user_email = $_SESSION["email"];
+    $user_password = $_SESSION["password"];
+
+    $con = new PDO("mysql:host=$servername;dbname=$databasename", $username, $password);
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "SELECT * FROM content WHERE email='$user_email';";
+    $stmt = $con->prepare($sql);
+    $stmt->execute();
+    return $stmt;
+  }
 }
 
 function registerNewUser($form_name, $form_password, $form_email, $form_text)
@@ -85,6 +98,8 @@ if (isset($_POST['login'])) {
   $form_password = $_POST['form_password'];  
 
   logIn($form_email, $form_password);
+
+  header("Location: ./index.php");
 }
 
 $con = null;

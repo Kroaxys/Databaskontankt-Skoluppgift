@@ -55,12 +55,13 @@ body, html {
     <a href="#home" class="w3-button w3-wide">LOGO</a>
 
     <div class="w3-flex w3-hide-small" style="margin-left:auto">
+      <?php createDescription(startup()); ?>
       <a href="#about" class="w3-button">ABOUT</a>
       <a href="#team" class="w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="https://paypal.com/" class="w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-      <a href="./login.php">LOGIN</a>
+      <a href="./login.php" class="w3-button">LOGIN</a>
     </div>
 
     <button class="w3-button w3-hide-large w3-hide-medium"
