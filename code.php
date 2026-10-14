@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 
 
 function createDescription($stmt)
@@ -11,8 +11,16 @@ function createDescription($stmt)
   }
 }
 
-function logIn(){
-  
+function logIn($form_email, $form_password){
+  $_SESSION["email"] = $form_email;
+  $_SESSION["password"] = $form_password;
+}
+
+function startup(){
+  if(isset($_SESSION["email"]) && isset($_SESSION["password"]))
+    {
+      
+    }
 }
 
 function registerNewUser($form_name, $form_password, $form_email, $form_text)
@@ -71,6 +79,12 @@ if (isset($_POST['send'])) {
   echo $form_name . $form_password . $form_email . $form_text;
 
   registerNewUser($form_name, $form_password, $form_email, $form_text);
+}
+if (isset($_POST['login'])) {
+  $form_email = $_POST['form_email'];
+  $form_password = $_POST['form_password'];  
+
+  logIn($form_email, $form_password);
 }
 
 $con = null;
