@@ -60,6 +60,7 @@ body, html {
       <a href="#work" class="w3-button"><i class="fa fa-th"></i> WORK</a>
       <a href="#pricing" class="w3-button"><i class="fa fa-usd"></i> PRICING</a>
       <a href="#contact" class="w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="./login.php">LOGIN</a>
     </div>
 
     <button class="w3-button w3-hide-large w3-hide-medium"

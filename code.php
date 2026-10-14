@@ -11,6 +11,10 @@ function createDescription($stmt)
   }
 }
 
+function logIn(){
+  
+}
+
 function registerNewUser($form_name, $form_password, $form_email, $form_text)
 {
 
