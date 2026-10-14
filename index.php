@@ -294,6 +294,7 @@ body, html {
         </li>
       </ul>
     </div>
+    
     <div>
       <ul class="w3-ul w3-white w3-hover-shadow">
         <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
@@ -350,6 +351,9 @@ body, html {
         </button>
       </p>
     </form>
+    <?php 
+      createDescription(getData());
+    ?>
     <!-- Image of location/map -->
     <img src="https://www.w3schools.com/w3images/map.jpg" alt="Location map" class="w3-greyscale" style="width:100%;margin-top:48px">
   </div>
