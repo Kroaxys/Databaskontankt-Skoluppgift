@@ -7,7 +7,6 @@ function createDescription($stmt)
 {
   foreach ($stmt as $key => $array) {
     echo "<br>Index: $key, Namn: $array[name], Lösenord: $array[password], Email: $array[email]";
-    // $array[content_id], $array[text], $array[date];
   }
 }
 
@@ -38,7 +37,6 @@ function startup()
 
 function registerNewUser($form_name, $form_password, $form_email, $form_text)
 {
-
   try {
     $servername = 'localhost';
     $username = 'soria';
@@ -72,10 +70,6 @@ function getData()
     $stmt = $con->prepare($sql);
     $stmt->execute();
 
-    // foreach($stmt as $key => $array){
-    //   echo "<br>Index: $key, Namn: $array[name], Lösenord: $array[password], Email: $array[email] || ";
-    //   // $array[content_id], $array[text], $array[date];
-    // }
     return $stmt;
   } catch (PDOException $E) {
     echo "Could not receive: " . $E->getMessage();

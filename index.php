@@ -1,21 +1,5 @@
 <?php include 'code.php' ?> 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Användargränsnittet till code.php, inget CSS</title>
-</head>
-<body>
-  <table>
-    <form action="" method="post">
-      <tr><td>Name: </td><td><input type="text" name="pu_name"></td></tr>
-      <tr><td>Password: </td><td><input type="password" name="pu_password"></td></tr>
-      <tr><td>E-mail: </td><td><input type="email" name="pu_email"></td></tr>
-      <tr><td>Presentation: </td><td><input type="text" name="pu_text"></td></tr>
-      <tr><td><input type="submit" name="send" value="Register"></td></tr>
-    </form>
-  </table>
-</body>
-</html> -->
+
 
 <!DOCTYPE html>
 <html>
@@ -341,7 +325,7 @@ body, html {
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     <br>
-    <!-- action="/action_page.php" target="_blank" -->
+    
     <form action="" method="post">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="form_name"></p>
       <p><input class="w3-input w3-border" type="email" placeholder="Email" required name="form_email"></p>
